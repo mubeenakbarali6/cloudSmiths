@@ -1,0 +1,7 @@
+<template>
+
+    <template if:true={holidays} for:each={holidays} for:item=holiday>
+       <c-search-results-lwc key = {holiday.primary_type} result={holiday}></c-search-results-lwc>
+    </template>
+    
+</template>

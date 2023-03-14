@@ -1,0 +1,11 @@
+<template>
+    <template  if:true={resultdata}>
+        <lightning-card class="slds-m-around_large">
+            <h3 slot="title">
+                {resultdata.date_Z} - {resultdata.primary_type}
+
+            </h3>
+            <p class="slds-p-horizontal_large">{resultdata.description}</p>
+        </lightning-card>
+    </template>
+</template>
